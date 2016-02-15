@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Link Ajax</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="ajax2.css">
+        
+  </head>
+  <body>
+    <div class="container" id="headdiv">
+      <div class="row">
+        <h1>Online Book Store</h1>
+      </div>
+    </div>
+    <div class="container" id="container2">
+      <div class="row">
+        <div class=col-md-2>
+          <h3>Book Index</h3>
+            <ul class="links">
+              <li><a onclick="loadData('php')">Php Books</a></li> 
+              <li><a onclick="loadData('java')">Java Books</a></li> 
+              <li><a onclick="loadData('html')">Html Books</a></li> 
+              <li><a onclick="loadData('css')">CSS Books</a></li> 
+              <li><a onclick="loadData('ruby')">Ruby Books</a></li> 
+              <li><a onclick="loadData('python')">Python Books</a></li>
+              <li><a onclick="loadData('android')">Android Books</a></li>
+              <li><a onclick="loadData('javascript')">JavaScript</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10" id="contain">
+          <h4>Books Description and Information</h4>
+            <div class="col-md-3 col-sm-6" id="contain1"></div>
+            <div class="col-md-3 col-sm-6" id="contain2"></div>
+            <div class="col-md-3 col-sm-6" id="contain3"></div>
+            <div class="col-md-3 col-sm-6" id="contain4"></div>
+        </div>
+      </div>
+   </div>
+          
+  <script src="ajax2.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script> 
+      </body>
+</html>
