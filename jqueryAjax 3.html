@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Infinite Scroll</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="ajax2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">           </script>
+    <script type="text/javascript" src="mustache.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+  </head>
+  <body onload="loadData('php',0)">
+    <div class="container" id="headdiv">
+      <div class="row">
+        <h1>Online Book Store</h1>
+      </div>
+    </div>
+   <div class="container container2">
+      <div class="row">
+        <div class=col-md-2>
+          <div class="row row1">
+          <h3>Book Index</h3>
+            <ul class="links">
+              <li><a onclick="loadData('php',0)">Php Books</a></li> 
+              <li><a onclick="loadData('java',0)">Java Books</a></li> 
+              <li><a onclick="loadData('html',0)">Html Books</a></li> 
+              <li><a onclick="loadData('css',0)">CSS Books</a></li> 
+              <li><a onclick="loadData('ruby',0)">Ruby Books</a></li> 
+              <li><a onclick="loadData('python',0)">Python Books</a></li>
+              <li><a onclick="loadData('android',0)">Android Books</a></li>
+              <li><a onclick="loadData('javascript',0)">JavaScript</a></li>
+            </ul>
+            </div>
+       </div>
+       <div class="col-md-10 contain">
+        <div class="row row2">
+         <p><h4>Books Description and Information</h4></p>
+            <div class="col-md-3 col-sm-6 contain1 cell_Div"></div>
+            <div class="col-md-3 col-sm-6 contain2 cell_Div"></div>
+            <div class="col-md-3 col-sm-6 contain3 cell_Div"></div>
+            <div class="col-md-3 col-sm-6 contain4 cell_Div"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+      <span class="close">×</span>
+      <h2 class="title">Modal Header</h2>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4">
+            <img class="img1" />
+          </div>
+          <div class="col-md-8">
+            <strong>ID:</strong><p class="id"></p>
+            <strong>Isbn:</strong><p class="isbn"></p>
+            <strong>Description:</strong><p class="description"></p>
+          </div> 
+       </div>
+     </div>
+     <div class="modal-footer">
+     </div>
+   </div>
+ </div>
+    <script src="jqueryAjax.js"></script>
+  </body>
+</html>
