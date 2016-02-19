@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Calender</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">           </script>
+    <script type="text/javascript" src="mustache.js"></script>
+    
+  </head>
+  <body>
+    <div class="conatiner">
+      <div> 
+    <div class="header">
+      <div class="monthName">
+        <h3 class="monthTitle"></h3>
+      </div>
+    </div>
+   <div class=dayBox> 
+    <table>
+	  <tr>
+	      <td>MON</td>
+	      <td>TUE</td>
+          <td>WED</td>
+	      <td>THU</td>
+	      <td>FRI</td>
+	      <td>SAT</td>
+	      <td>SUN</td>
+	    </tr>
+        <tr class="row1"></tr>
+        <tr class="row2"></tr>
+        <tr class="row3"></tr>
+        <tr class="row4"></tr>
+        <tr class="row5"></tr>
+     </table>
+     
+     <button type="button" class="previous" onclick="">Previous</button>
+      <button type="button" class="next" onclick="">Next</button>
+    </div>
+    
+  </body>
+  <script id="templateMonth" type="x-tmpl-mustache">
+    <div>{{month}} - {{year}}</div>
+   </script> 
+  <script id="templateWeek" type="x-tmpl-mustache">
+    <td>{{day}}</td>
+   </script> 
+<script>
+    $(document).ready(function (){
+      var calenderObject = new calender();
+          calenderObject.calenderdata();
+          calenderObject.month();
+    });
+  </script>
+  <script src="calender.js"></script>
+</html>
