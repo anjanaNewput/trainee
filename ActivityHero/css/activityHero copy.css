@@ -1,0 +1,172 @@
+
+.background {
+  background-image: url("img/hero-main-image-1920x987.jpg");
+  padding: 0;
+  margin: 0;
+  background-size: 100% 100%;
+}
+.header {
+  background-color: #2B78A3;
+  opacity: 0.8;
+  margin: 0;
+  padding: 0;
+  
+}
+.block-third {
+  margin-top: 20px;
+}
+.column {
+  padding: 25px;
+  margin-left: 75px;
+}
+.column-img {
+  margin-left: 60px;
+  height: 80px;
+  width: 90px;
+}
+h4 {
+  text-align: center;
+  color: orange;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+h2 {
+  text-align: center;
+  color: orange;
+  margin: 10px;
+  padding: 20px;
+}
+.b1 {
+  border-radius: 5px;
+  margin-left: 40%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 250px;
+}
+.carot-symbol {
+  margin-left: 48%;
+  margin-top: 20px;
+}
+.paragraph-overimage {
+  text-align: center;
+  color: #fff;
+  margin: 5px;
+  padding: 5px;
+  font-size: 15px;
+}
+.block-fourth {
+  background-color: lightgray;
+}
+.block-fourth-heading {
+  text-align: center;
+  color: black;
+}
+.block-fourth p {
+  color: black;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 10px;
+}
+span {
+  font-weight: bold;
+}
+.block-fifth-heading {
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+.block-fifth {
+  background-color: darkslategrey;
+  padding: 20px;
+}
+.block-fifth-subdiv {
+  background-color: #778899;
+}
+.ul-1 {
+  float:left;
+  margin-left: 0;
+}
+.ul-2 {
+  float:right;
+}
+.subdiv-ul {
+  margin-top: 0;
+}
+li {
+  margin-top: 20px;
+  margin-left: -15px;
+}
+.block-fifth-subdiv-2 {
+  border: 1px solid #778899;
+  border-radius: 15px;
+  color: #fff;
+  margin-top: 20px;
+}
+.block-fifth-subdiv-2 p {
+  text-align: center;
+}
+.block-fifth-subdiv-3 {
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+  padding: 15px;
+}
+.fees {
+  font-weight: bold;
+  font-size: 40px;
+}
+h3 {
+  text-align: center;
+}
+.block-sixth-p {
+  margin-left: 200px;
+  margin-top: 20px;
+}
+.block-fifth-subdiv-4-left {
+  float: left;
+  border: 1px solid #778899;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  width: 180px;
+  padding: 3px;
+}
+.block-fifth-subdiv-4-right {
+  float: right;
+  border: 1px solid #778899;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  width: 180px;
+  padding: 3px;
+}
+.block-sixth-ul {
+  margin-left: 150px;
+}
+.block-sixth-ul li{
+  list-style: none;
+  float:left;
+  margin: 5px;
+  padding: 15px;
+}
+.block-seventh {
+  background-color: lightgray;
+}
+.block-seventh-container-div {
+  align-content: center;
+  margin-top: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+block-seventh-container-para {
+  margin-top: 20px;
+  text-align: center;
+}
