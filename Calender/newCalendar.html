@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Calender</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="newCalendar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
+    <script type="text/javascript" src="mustache.js"></script>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="wrapper-Container">
+        <div class="header"></div>
+        <div class="weekName"></div>
+        <div class="cell"></div>
+        <div class="button-grp">
+        <button type="button" id="btn-prev">Previous</button>
+        <button type="button" id="btn-next">next</button>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+      <span class="close">×</span>
+       <h2>Happy Birth Day to You</h2>
+        <p class= "name"></p>
+      </div>
+      </div>
+    <script id="template" type="x-tmpl-mustache">
+      <div>
+        {{currMonth}}-{{currYear}}
+      </div>
+    </script>
+     <script id="templateWeek" type="x-tmpl-mustache">
+      <div class="days-of-week">{{week}}</div>
+    
+    </script>
+    <script id="template1" type="x-tmpl-mustache">
+      <div class="column-Div">{{date}}</div>
+    </script> 
+    <script id="templateBday" type="x-tmpl-mustache">
+      <div class="column-Div birth">{{date}}</div>
+    </script> 
+    <script>
+      $(document).ready( function(){
+        var c = new calendar();
+        c.initialize();
+      });
+    </script>
+  <script src="newCalender.js"></script>
+  </body>
+    
+</html>

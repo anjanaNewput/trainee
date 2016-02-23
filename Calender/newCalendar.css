@@ -1,0 +1,90 @@
+body{
+  background-color: #835C3B;
+}
+
+.wrapper-Container {
+  width: 60%;
+  margin: 30px auto 0;
+  border: 1px solid #000;
+  background-color: #deb887;
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  
+}
+.cell {
+  margin: 20px 0 ;
+}
+.column-Div {
+  display: inline-block;
+  width: 90px;
+  padding: 7px;
+  text-align: center;
+  height: 40px;
+  margin-top: 5px;
+  transform: translateY(-20);
+  font-size: 15px;
+}
+.birth {
+  background-color: #028482;
+  color: #fff;
+}
+.button-grp {
+  padding: 25px;
+  margin: 0;
+  position: relative;
+}
+.weekname {
+  margin-top: 20px;
+}
+.days-of-week {
+  display: inline-block;
+  width: 80px;
+  margin: 5px;
+  padding: 2px;
+  text-align: center;
+  transform: translateY(-20);
+  background-color: aqua;
+  font-size: 15px;
+}
+#btn-prev {
+  float: left;
+}
+#btn-next {
+  float: right;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  padding: 40px;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;  
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+  background-color: #028482;
+  margin: 15% auto; 
+  padding: 20px;
+  border-radius: 1px solid #888;
+  width: 50%; 
+}
+/* The Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
