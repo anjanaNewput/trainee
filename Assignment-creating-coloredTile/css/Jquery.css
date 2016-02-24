@@ -1,0 +1,26 @@
+body {
+  background-color: #FFF8DC;
+}
+.tile {
+  width: 300px;
+  border: 1px solid #000;
+  positon: relative;
+  float: left;
+  height: 420px;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+.heading {
+  text-align: center;
+}
+.description {
+  padding: 15px;
+}
+.click-button {
+  margin-left: 100px;
+  padding: 5px;
+}

@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Replica Of Div</title>
+    <link rel="stylesheet" href="css/Jquery.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="mustache.js"></script>
+  </head>
+  <body>
+    <div class="tile">
+      <div>
+        <img src="flag.png" class="Image"/>
+        <h2 class="heading">About India</h2>
+        <p class="description">The name India is derived from Indus, which originates from the Old Persian 
+          word Hinduš.
+          The latter term stems from the Sanskrit word Sindhu, which was the historical local appellation
+          for the Indus River.The ancient Greeks referred to the Indians as Indoi,which translates 
+          as "The people of the Indus".</p>
+      </div>
+      <button type="button" class="click-button">Click Me</button>
+    </div>
+    <div class="new-cell"></div>
+    <script id="template" type="x-tmpl-mustache">
+      <div class="tile cells" id={{color}}> 
+        <div>
+          <img class="Image" src="{{image}}"/>
+          <h2 class="heading">{{title}}</h3>
+          <p class="description">{{description}}</p>
+        </div>
+      </div>
+    </script>
+    <script src="js/Jquery.js"></script>
+  </body>
+</html>
