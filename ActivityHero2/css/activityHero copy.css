@@ -395,12 +395,7 @@ span {
   margin-top: 30px;
 }
 .form-element {
-  height: 80px;
-}
-.errorLabel {
-  color: red;
-  font-weight: 300;
-  font-size: 12px;
+  margin-top: 20px;
 }
 .green-button-2 {
   color: #fff;
