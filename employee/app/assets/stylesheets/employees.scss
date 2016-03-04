@@ -1,0 +1,32 @@
+.master {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #deb887;
+  h1{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  table{
+    width: 70%;
+    margin: 0 auto;
+    th{
+      padding: 5px;
+      margin: 5px;
+    }
+    td{
+      padding: 10px;
+      margin: 5px;
+      text-align: center;
+    }
+  }
+  h3 {
+    text-align: center;
+  }
+  #error_explanation {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

@@ -1,0 +1,32 @@
+<div class="master">
+  <h3>Edit Employee Details</h3>
+  <%= form_for :employee ,url: employee_path(@employee), method: :put do |f| %>
+  <% if @employee.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@employee.errors.count, "error") %> Found
+      </h2>
+      <ul>
+        <% @employee.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <p>
+      <%= f.label :Name %><br>
+      <%= f.text_field :name %><br>
+    </p>
+    <p>
+      <%= f.label :Age %><br>
+      <%= f.text_field :age %><br>
+    </p>
+    <p>
+      <%= f.label :Role %><br>
+      <%= f.text_field :role %><br>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+</div>
