@@ -1,0 +1,24 @@
+<div class="master">
+  <h1> All the user </h1>
+  <p><%= link_to 'New user', new_user_path %></p>
+  <p><%= link_to 'Get Developer', get_developer_path %></p>
+  <p><%= link_to 'Get Article', articles_path %></p>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Role</th>
+      <th colspan="3">Options</th>
+    </tr>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.age %></td>
+        <td><%= user.role %></td>
+        <td><%= link_to 'Show', user_path(user) %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Delete',delete_user_path(user), method: :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

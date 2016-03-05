@@ -1,0 +1,23 @@
+.box {
+  width: 60%;
+  margin: 0 auto;
+  background-color: beige;
+  h1{
+    text-align: center;
+    color: brown;
+  }
+  table {
+    margin-left: 180px;
+    th {
+      margin: 5px;
+      padding: 10px;
+    }
+    td {
+      margin: 5px;
+      padding: 10px;
+    }
+  }
+  .new-article {
+    text-align: center;
+  }
+}
