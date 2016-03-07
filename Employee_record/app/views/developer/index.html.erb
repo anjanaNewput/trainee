@@ -1,0 +1,25 @@
+<div class="master">
+  <h1> All the Employee </h1>
+  <p><%= link_to 'New Employee', new_developer_path %></p>
+  <p><%= link_to 'Get Pojects', projects_path %></p>
+  
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Role</th>
+      <th>Project_Id</th>
+      <th colspan="3">Options</th>
+    </tr>
+    <% @developers.each do |developer| %>
+      <tr>
+        <td><%= developer.employee_name %></td>
+        <td><%= developer.age %></td>
+        <td><%= developer.email %></td>
+        <td><%= developer.role %></td>
+        <td><%= link_to 'Show', developer_path(developer) %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
