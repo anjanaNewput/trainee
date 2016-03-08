@@ -1,37 +1,59 @@
-.master {
-  width: 60%;
-  margin: 0 auto;
-  background-color: #deb887;
+.header{
+  height: 100px;
+  width: 100%;
+  margin-top: -20px;
+  padding: 0;
+  background-color: darkturquoise;
   h1{
     text-align: center;
+    color: darkblue;
+    position: relative;
+    top: 20px;
   }
-  p{
-    text-align: center;
-    margin: 5px;
   }
-  table{
-    width: 70%;
-    margin: 0 auto;
-    th{
-      padding: 5px;
-      margin: 5px;
-    }
-    td{
-      padding: 10px;
-      margin: 5px;
+  .col-md-3{
+    p{
       text-align: center;
+      margin-top: 10px;
+    }
+    .a{
+      color: #000;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    ul{
+      padding: 0;
+      li{
+        border: 1px solid #000;
+        list-style: none;
+      }
     }
   }
-  h3 {
-    text-align: center;
+  .col-md-9{
+    background-color: lightgray;
+    .content-right{
+      width: 80%;
+      margin: 10px auto;
+      h2{
+        text-align: center;
+      }
+      th{
+        text-align: center;
+        padding: 4px;
+      }
+      td{
+        text-align: center;
+        padding: 5px;
+      }
+    }
+    .content-middle {
+      width: 50%;
+      margin: 0 auto;
+      h2{
+        text-align: center;
+      }
+      p{
+        text-align: center;
+      }
+    }
   }
-  #error_explanation {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .field_with_errors{
-    text-align: center;
-    padding: 2px;
-  }
-}

@@ -1,5 +1,8 @@
-<div class="master">
-  <h1>This is New Project</h1>
+<%= render "developer/layout" %>
+<%= render "developer/left_link" %>
+<div class="col-md-9">
+  <div class="content-middle">
+  <h2>This is New Project</h2>
   <%= form_for :project, url: projects_path do |f| %>
     <% if @project.errors.any? %>
       <div id="error_explanation">
@@ -27,4 +30,7 @@
     </p>
   <% end %>
   <p><%= link_to 'Back' , projects_path %></p>
+</div>
+</div>
+</div>
 </div>

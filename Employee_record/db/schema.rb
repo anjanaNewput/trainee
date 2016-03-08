@@ -11,19 +11,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160307154350) do
+ActiveRecord::Schema.define(version: 20160308155408) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "developers", force: :cascade do |t|
-    t.string   "employee_name", null: false
-    t.integer  "age",           null: false
-    t.string   "email",         null: false
-    t.string   "role",          null: false
+  create_table "companies", force: :cascade do |t|
+    t.string   "company_name",         null: false
+    t.string   "owner_name",           null: false
+    t.integer  "year_of_registration", null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  create_table "company_and_projects", force: :cascade do |t|
+    t.integer  "company_id"
     t.integer  "project_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "developers", force: :cascade do |t|
+    t.string   "employee_name",     null: false
+    t.integer  "age",               null: false
+    t.string   "email",             null: false
+    t.string   "role",              null: false
+    t.integer  "project_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.integer  "company_id"
+    t.integer  "salary_account_id"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -31,6 +48,14 @@ ActiveRecord::Schema.define(version: 20160307154350) do
     t.text     "description", null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "salary_accounts", force: :cascade do |t|
+    t.integer  "account_number", null: false
+    t.string   "bank_name",      null: false
+    t.integer  "developer_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
 end

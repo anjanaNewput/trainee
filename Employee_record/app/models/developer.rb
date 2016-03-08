@@ -1,5 +1,7 @@
 class Developer < ActiveRecord::Base
   belongs_to :project
+  belongs_to :company
+  has_one :salary_account
   validates :employee_name , presence: true , format: { with: /[a-zA-Z]/,
              message: "should be letters"  }
   validates :age , presence: true , numericality: {integer_only: true , message: "should be in numbers"}

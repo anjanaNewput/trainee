@@ -1,18 +1,29 @@
-<div class="master">
-  <p>
-    <strong>Employee Name:</strong>
-    <%= @developer.employee_name %>
-  </p>
-  <p>
-    <strong>Age:</strong>
-    <%= @developer.age %>
-  </p>
-  <p>
-    <strong>Email:</strong>
-    <%= @developer.email %>
-  </p>
-  <p>
-    <strong>Role:</strong>
-    <%= @developer.role %>
-  </p>
+<%= render "layout" %>
+<%= render "left_link" %>
+  <div class="col-md-9">
+    <div class="content-middle">
+      <h2>Detail of employee</h2>
+      <p>
+        <strong>Employee Name:</strong>
+        <%= @developer.employee_name %>
+      </p>
+      <p>
+        <strong>Age:</strong>
+        <%= @developer.age %>
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <%= @developer.email %>
+      </p>
+      <p>
+        <strong>Role:</strong>
+        <%= @developer.role %>
+      </p>
+      <p>
+        <strong>Project:</strong>
+        <%= @developer.project.title %>
+      </p>
+    </div>
+</div>
+</div>
 </div>

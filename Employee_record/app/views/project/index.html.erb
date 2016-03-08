@@ -1,6 +1,9 @@
-<div class="master">
-  <h1>Listing projects</h1>
-  <p><%= link_to 'New project', new_project_path %></p>
+<%= render "developer/layout" %>
+<%= render "developer/left_link" %>
+<div class="col-md-9">
+  <div class="content-right">
+  <h2>Listing projects</h2>
+  
   <table>
     <tr>
       <th>Title</th>
@@ -12,7 +15,11 @@
         <td><%= project.title %></td>
         <td><%= project.description %></td>
         <td><%= link_to 'Show', project_path(project) %></td>
+        <td><%= link_to 'Get_Developer', get_project_developer_path(project) %></td>
       </tr>
     <% end %>
   </table>
+  </div>
+</div>
+</div>
 </div>

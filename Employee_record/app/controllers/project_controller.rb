@@ -39,11 +39,11 @@ class ProjectController < ApplicationController
    # redirect_to projects_path
   #end
   
-  #def show_project
-    #@project = Project.find(params[:id])
-   # @developer = @project.developer
-    #redirect_to @developer
-  #end
+  def show_devloper
+    @project = Project.find(params[:id])
+    @developers = @project.developers
+  end
+  
   private
   def project_params
     params.require(:project).permit(:title,:description)

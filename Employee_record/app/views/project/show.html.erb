@@ -1,4 +1,7 @@
-<div class="master">
+<%= render "developer/layout" %>
+<%= render "developer/left_link" %>
+<div class="col-md-9">
+  <div class="content-middle">
   <p>
     <strong>Title:</strong>
     <%= @project.title %>
@@ -9,4 +12,7 @@
     <%= @project.description %>
   </p>
   <%= link_to 'Back', projects_path %></p>
+</div>
+</div> 
+</div>
 </div>
