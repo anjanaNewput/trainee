@@ -11,27 +11,29 @@ class DeveloperController < ApplicationController
   
   def new
     @developer = Developer.new
+    render '_form'
   end
   
   def edit
     @developer = Developer.find(params[:id])
+    render '_form'
   end
   
   def create
     @developer = Developer.new(developer_params)
     if @developer.save
-      redirect_to  developer_path(@developer)
+      redirect_to  @developer
     else
-      render 'new'
+      render '_form'
     end
   end
   
  def update
     @developer = Developer.find(params[:id])
    if @developer.update(developer_params)
-    redirect_to developer_path(@developer)
+    redirect_to @developer
    else
-    render 'edit'
+    render '_form'
    end
 end
   
