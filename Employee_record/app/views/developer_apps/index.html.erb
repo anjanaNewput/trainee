@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Developer Apps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Login</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @developer_apps.each do |developer_app| %>
+      <tr>
+        <td><%= developer_app.name %></td>
+        <td><%= developer_app.email %></td>
+        <td><%= developer_app.login %></td>
+        <td><%= link_to 'Show', developer_app %></td>
+        <td><%= link_to 'Edit', edit_developer_app_path(developer_app) %></td>
+        <td><%= link_to 'Destroy', developer_app, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Developer app', new_developer_app_path %>

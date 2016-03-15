@@ -6,13 +6,16 @@
     <tr>
       <th>Title</th>
       <th>Description</th>
+      <th>No of Developer</th>
       <th colspan="3">Options</th>
       <th>Developer ON Project</th>
+      
     </tr>
     <% @projects.each do |project| %>
       <tr>
         <td><%= project.title %></td>
         <td><%= project.description %></td>
+        <td><%= project.no_of_developer%></td>
         <td><%= link_to 'Show', project_path(project) %></td>
         <td><%= link_to 'Edit', edit_project_path(project) %></td>
         <td><%= link_to 'Remove', delete_project_path(project),method: :delete,

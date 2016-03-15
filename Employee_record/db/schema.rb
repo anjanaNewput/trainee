@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160309040458) do
+ActiveRecord::Schema.define(version: 20160314121316) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "application_developers", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "login"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "clients", force: :cascade do |t|
     t.string   "client_name", null: false
@@ -32,6 +40,14 @@ ActiveRecord::Schema.define(version: 20160309040458) do
     t.datetime "updated_at",           null: false
   end
 
+  create_table "developer_apps", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "login"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "developers", force: :cascade do |t|
     t.string   "employee_name",     null: false
     t.integer  "age",               null: false
@@ -45,10 +61,11 @@ ActiveRecord::Schema.define(version: 20160309040458) do
   end
 
   create_table "projects", force: :cascade do |t|
-    t.string   "title",       null: false
-    t.text     "description", null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "title",           null: false
+    t.text     "description",     null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "no_of_developer"
   end
 
   create_table "salary_accounts", force: :cascade do |t|

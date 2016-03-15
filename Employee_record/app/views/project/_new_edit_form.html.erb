@@ -1,7 +1,7 @@
 <div class="col-md-9">
   <div class="content-middle">
   <h2>This is New Project</h2>
-  <%= form_for @project  do |f| %>
+    <%= form_for @project remote: true do |f| %>
     <% if @project.errors.any? %>
       <div id="error_explanation">
         <h2>

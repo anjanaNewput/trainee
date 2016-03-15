@@ -1,0 +1,5 @@
+<% if @developer.errors.empty?  %>
+ $('.content-middle').empty();
+ $('.content-middle').append("<%=raw escape_javascript( render :partial => '/developer/form') -%>");
+ 
+<% end %>

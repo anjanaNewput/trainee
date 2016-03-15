@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  resources :developer_apps
+  
   root 'developer#home'
   
   get '/developers/all' , to: 'developer#index' , as: 'developers'
-  get '/developers/create', to: 'developer#new',as: 'new_developer'
+  get '/developers/new', to: 'developer#new',as: 'new_developer'
   
-  post '/developers/create',  to: 'developer#create'
+  post '/developers/new',  to: 'developer#create'
   get '/developers/:id/show',to: 'developer#show', as:'developer'
   get '/developers/:id/edit', to: 'developer#edit', as: 'edit_developer'
   

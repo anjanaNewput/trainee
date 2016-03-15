@@ -1,15 +1,25 @@
 class ProjectController < ApplicationController
   def index
     @projects = Project.all
+    respond_to do |f|
+      f.json {render json: @projects}
+      f.html
+      f.js
+    end
   end
   
   def show
     @project = Project.find(params[:id])
+    respond_to do |format|
+      format.json {render json: @project}
+      format.html
+      format.js
+    end
   end
   
   def new
     @project = Project.new
-    render '_new_edit_form'
+    #render '_new_edit_form'
   end
   
   def create
