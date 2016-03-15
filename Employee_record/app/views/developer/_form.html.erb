@@ -1,3 +1,4 @@
+<div class="content-middle">
 <%= form_for @developer ,remote: true do |f| %>
   <% if @developer.errors.any? %>
   <div id="error_explanation">
@@ -36,4 +37,6 @@
     <%= f.submit %>
   </p>
   <% end %>
+  <p><%= link_to 'Back' , developers_path,remote: true %></p>
+  </div>
 

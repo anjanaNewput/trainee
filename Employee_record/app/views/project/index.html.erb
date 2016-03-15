@@ -1,8 +1,8 @@
 <div class="col-md-9">
   <div class="content-right">
-    <div class="page-header"><h2>Listing projects</h2></div>
-  
-  <table>
+    <div class="page-header"><h2>Listing projects</h2>
+    </div>
+  <table class="table">
     <tr>
       <th>Title</th>
       <th>Description</th>
@@ -16,11 +16,11 @@
         <td><%= project.title %></td>
         <td><%= project.description %></td>
         <td><%= project.no_of_developer%></td>
-        <td><%= link_to 'Show', project_path(project) %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Remove', delete_project_path(project),method: :delete,
+        <td><%= link_to 'Show', project_path(project),remote: true %></td>
+        <td><%= link_to 'Edit', edit_project_path(project),remote: true %></td>
+        <td><%= link_to 'Remove', delete_project_path(project),remote: true,method: :delete,
             data: { confirm: 'Are you sure?' } %></td>
-      <td><%= link_to 'Get_Developer', get_project_developer_path(project) %></td>
+      <td><%= link_to 'Get_Developer', get_project_developer_path(project),remote: true %></td>
       </tr>
     <% end %>
   </table>

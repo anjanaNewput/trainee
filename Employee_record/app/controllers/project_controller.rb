@@ -33,7 +33,12 @@ class ProjectController < ApplicationController
   
   def edit
     @project = Project.find(params[:id])
-    render '_new_edit_form'
+    #render '_new_edit_form'
+    respond_to do |format|
+      format.json {render json: @project}
+      format.html
+      format.js
+    end
   end
   def update
     @project = Project.find(params[:id])
@@ -47,13 +52,17 @@ class ProjectController < ApplicationController
   def destroy
     @project = Project.find(params[:id])
     @project.destroy
- 
     redirect_to projects_path
   end
   
   def show_devloper
     @project = Project.find(params[:id])
     @developers = @project.developers
+    respond_to do |format|
+      format.json {render json: @project}
+      format.html
+      format.js
+    end
   end
   
   private

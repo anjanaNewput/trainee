@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :developer_apps
   
-  root 'developer#home'
+  root 'developer#index'
   
   get '/developers/all' , to: 'developer#index' , as: 'developers'
   get '/developers/new', to: 'developer#new',as: 'new_developer'

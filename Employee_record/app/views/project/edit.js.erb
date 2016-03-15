@@ -1,0 +1,5 @@
+<% if @project.errors.empty?  %>
+ $('.col-md-9').empty();
+ $('.col-md-9').append("<%=raw escape_javascript( render :partial => 'new_edit_form') -%>");
+ 
+<% end %>
